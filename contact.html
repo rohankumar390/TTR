@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <body>
+        <main>
+          
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img style="padding: 20px;width: 35%;"
+                            src="img/logo.png" alt></a></div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="#contact">Log out</a></li>
+                </ul>
+                <!-- <div class="cart-icon">&#128722;</div> -->
+            </div>
+            <div class="contact-container">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"
+                        required></textarea>
+
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </form>
+
+                <div id="map">
+                    <div class="google-map">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13592.786533159777!2d74.59369139900588!3d31.60107136281827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196d50b3afe305%3A0xbaf9382cf71184dc!2sAttari%2C%20Punjab%20143108!5e0!3m2!1sen!2sin!4v1704138106036!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h3>About Us</h3>
+                        <p>Your brief description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <ul class="social-links">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
