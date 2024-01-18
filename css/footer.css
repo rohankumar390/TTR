@@ -24,6 +24,9 @@ footer {
 
 .footer-section h3 {
     color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .footer-section ul {
@@ -37,19 +40,28 @@ footer {
 
 .social-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ffd700;
 }
 
 .copyright {
     text-align: center;
     margin-top: 20px;
+    color: #999;
 }
-a{
+
+a {
     color: #fff;
+    text-decoration: none;
 }

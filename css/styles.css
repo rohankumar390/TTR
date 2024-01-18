@@ -3,58 +3,63 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 15px 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+nav {
   display: flex;
-  gap: 30vw;
+  justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 1.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s ease-in-out;
 }
 
-.logo {
-  font-size: 1.5em;
-}
-
-.nav-list {
-  font-size: 22px;
-  list-style-type: none;
-  display: flex;
-}
-
-.nav-list li {
-  margin: 0 15px;
-}
-a{
-  text-decoration: none;
-}
-.nav-list a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.cart-icon {
-  font-size: 1.5em;
-  cursor: pointer;
+nav button:hover {
+  background-color: #e5b800;
 }
 
 .con {
   align-items: center;
   display: flex;
   justify-content: center;
- 
+  padding-bottom: 25px;
 }
-.con img{
+
+.con img {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .slider-container {
   position: relative;
   width: 100%;
@@ -63,89 +68,120 @@ a{
   overflow: hidden;
 }
 
-.shop-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-weight: 500;
-    padding: 20px;
-}
-.shop-content h1{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 6px;
-    font-size: 60px;
-}
-.shop-content button{
-    background-color: black;
-    color: aliceblue;
-    border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    text-transform: uppercase;
-  padding: 10px;
-}
-.slider {
+.shop-content {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
 }
 
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
+.shop-content h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 6px;
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.shop-content button {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.shop-content button:hover {
+  background-color: #333;
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .card {
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
-    max-width: 77%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .buy-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .buy-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
-.heading{
+.heading {
   display: flex;
   font-size: 2rem;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to right, #ffcc00, #ff6600);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
 }
-.heading h1{
-  background-color: aquamarine;
+
+.heading h1 {
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.ban{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    gap: 10vw;
+  }
+  .nav-list {
+    font-size: 12px;
+  }
+  .card {
+    width: 100%;
+  }
+  .con {
+    margin-top: 76px;
+  }
+  .logo img {
+    padding: 24px;
+    width: 19%;
+  }
 }
-/* 
